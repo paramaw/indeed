@@ -1,0 +1,6 @@
+exporter_name: jobs_json
+exporter_type: json
+collection: jobs
+write_mode: pretty_array
+offset: 0
+order: desc

@@ -4,3 +4,7 @@ seeder:
 parsers:
   - page_type: listings
     file: ./parsers/listings.rb
+  - page_type: job
+    file: ./parsers/job.rb
+exporters:
+  - file: ./exporters/jobs_json.yaml
