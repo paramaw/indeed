@@ -19,7 +19,7 @@ job['title'] = title
 job['company'] = company
 job['location'] = location.empty? ? job_location : location
 job['job_description'] = job_description
-job['job_type']　= job_type
+# job['job_type']　= job_type
 job['scraped_at'] = scraped_at
 
 job['_collection'] = "jobs"
