@@ -8,7 +8,7 @@ title = nokogiri.xpath('//h3[contains(@class, "jobsearch-JobInfoHeader-title")]'
 company = nokogiri.xpath('///span[contains(@class, "jobsearch-JobInfoHeader-companyName")]/a').text
 location = nokogiri.xpath('//div[contains(@class, "jobsearch-JobInfoHeader-companyLocation")]').text
 job_description = nokogiri.xpath('//div[@id="jobDescriptionText"]').text
-job_type = nokogiri.xpath('//p[contains(text(), "Job Type")]').text
+job_type = nokogiri.xpath('//p[contains(text(), "Job Type")]').text || ""
 job_location = nokogiri.xpath('//p[contains(text(), "Location")]').text
 scraped_at = Time.now.utc
 
