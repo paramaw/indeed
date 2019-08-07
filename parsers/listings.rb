@@ -19,6 +19,7 @@ jobs.each do |job|
 			force_fetch: true,
 			vars: {
 				posting_url: url,
+				query: page['vars']['query']
 			}
 		}
 	end
