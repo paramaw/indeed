@@ -5,7 +5,7 @@
 nokogiri = Nokogiri::HTML content
 
 title = nokogiri.xpath('//h3[contains(@class, "jobsearch-JobInfoHeader-title")]').text
-company = nokogiri.xpath('///span[contains(@class, "jobsearch-JobInfoHeader-companyName")]/a').text
+company = nokogiri.xpath('///span[contains(@class, "jobsearch-JobInfoHeader-companyName")]').text
 location = nokogiri.xpath('//div[contains(@class, "jobsearch-JobInfoHeader-companyLocation")]').text
 job_description = nokogiri.xpath('//div[@id="jobDescriptionText"]').text
 job_type = nokogiri.xpath('//p[contains(text(), "Job Type")]').text || ""
