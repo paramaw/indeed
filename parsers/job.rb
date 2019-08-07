@@ -21,7 +21,7 @@ job['location'] = location.empty? ? job_location : location
 job['job_description'] = job_description
 # job['job_type']　= job_type
 job['scraped_at'] = scraped_at
-
+job['posting_url'] = page['vars']['posting_url']
 job['_collection'] = "jobs"
 
 outputs << job

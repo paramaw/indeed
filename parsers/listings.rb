@@ -18,7 +18,7 @@ jobs.each do |job|
 			fetch_type: 'browser',
 			force_fetch: true,
 			vars: {
-				url: url,
+				posting_url: url,
 			}
 		}
 	end
