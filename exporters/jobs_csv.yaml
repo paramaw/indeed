@@ -6,3 +6,5 @@ fields:
   path: company
 - header: job_description
   path: job_description
+- header: location
+  path: location
