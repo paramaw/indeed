@@ -8,3 +8,4 @@ parsers:
     file: ./parsers/job.rb
 exporters:
   - file: ./exporters/jobs_json.yaml
+  - file: ./exporters/jobs_csv.yaml
