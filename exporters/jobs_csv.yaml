@@ -1,6 +1,7 @@
 collection: jobs
 exporter_name: jobs_csv
 exporter_type: csv
+start_on_job_done: true
 fields:
 - header: company
   path: company
