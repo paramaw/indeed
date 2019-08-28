@@ -1,8 +1,8 @@
 collection: jobs
-  exporter_name: jobs_csv
-  exporter_type: csv
-  fields:
-  - header: company
-    path: company
-  - header: job_description
-    path: job_description
+exporter_name: jobs_csv
+exporter_type: csv
+fields:
+- header: company
+  path: company
+- header: job_description
+  path: job_description
