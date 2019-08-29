@@ -2,6 +2,7 @@
 
 # content = open url
 require 'readability'
+require 'digest'
 nokogiri = Nokogiri::HTML content
 
 def extract_boilerpipe(html)
@@ -32,6 +33,8 @@ job['job_description_html'] = extract_boilerpipe(job_description_html)
 job['scraped_at'] = scraped_at
 job['posting_url'] = page['vars']['posting_url']
 job['_collection'] = "jobs"
+
+job['hash_id'] = Digest::MD5.hexdigest(job_type.to_s + title.to_s + job_description.to_s + company.to_s + location.to_s)
 
 outputs << job
 
